@@ -1,0 +1,32 @@
+.l-padding {
+  padding-left: 3rem;
+}
+#hero {
+  background-image: url('../images/banner/bannerNotreAgence.jpg');
+}
+#notreAgence .imgGauche img {
+  width: 100%;
+  object-fit: cover;
+}
+.avisClass {
+  margin: 3rem 0;
+}
+.avisClass .logoAvis {
+  text-align: center;
+}
+.avisClass .logoAvis img {
+  height: 10rem;
+  overflow: hidden;
+}
+@media (max-width: 576px) {
+  .l-padding {
+    padding-left: 1rem;
+  }
+  #notreAgence .imgGauche img {
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+  #notreAgence .avisClass {
+    text-align: center;
+  }
+}

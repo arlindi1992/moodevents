@@ -1,0 +1,157 @@
+@whiteColor:#fff;
+@blackColor:#000;
+@orangeColor:rgb(237, 151, 2);
+@darkGriseColor:#202020;
+@MontserratMedium:Montserrat Medium ;
+
+//Header hero
+
+#hero{
+  background-image: url('../images/banner/bannerNousContacter.jpg');
+}
+
+#contact{
+  //Form gauche
+  .formBg {
+    background-color: @darkGriseColor;
+    border-radius: 1.5rem;
+    padding-bottom: .5rem;
+    margin-bottom: 2rem;
+    width: 100%;   
+    form{
+      width: 90%;
+      text-align: center;
+      color: @whiteColor;
+      margin: 3rem auto;
+      border-radius: 1.5rem;
+      font-size: 1.4rem;
+      h2{
+        padding-top: 2rem;
+        font-size: 2rem;
+        color:@orangeColor;
+        font-family: Montserrat Medium;      
+      }
+      label{
+        display: block;
+        text-align: left;
+        margin: .7rem 0 .1rem;
+        padding-left: 0rem;
+      }
+    
+      input{
+        width: 100%;
+        font-size: 1.2rem;
+        height: 3rem;
+        border-radius: .5rem;
+      }
+      .row{
+        input{
+          width: 97%
+        }
+      }
+      .note{
+        margin: 0 0 1rem;
+        font-size: 1rem;
+      }
+      textarea{
+        height: 10rem;
+        width: 100%;
+        resize: none;
+        padding: 1rem;
+        border-radius: .5rem;
+      }
+    }
+  }
+  // Horaries 
+  .horaries{
+    background-color: @darkGriseColor;
+    color: @whiteColor;
+    margin: 1.5rem auto;
+    border-radius: 1.5rem;
+    padding-bottom: .5rem;
+    width: 35rem;
+    
+    h2{
+      text-align: center;
+      padding: 1.5rem;
+      color: @orangeColor;
+      font-family: @MontserratMedium;
+      margin: 0rem;
+      font-size: 2rem;
+    }
+    ul{
+      padding-bottom: 1.5rem;
+      li{
+        font-size: 1.3rem;
+        list-style-type: none;
+        line-height: 2.2rem;
+        
+      }
+    }
+  }
+  //Image a droit
+  .imgDroite{
+    border-radius: 1.5rem; 
+    margin: 3rem auto 0;
+    width: 35rem;
+  
+    
+  }
+}
+
+// Media query pour mobile
+@media(max-width: 576px) {
+
+  #contact{
+    .container{
+      padding: 0 ;
+    }
+    .formBg{
+      padding-left: 0;
+      margin: 0;
+      width: 100%;
+      border-radius: 0;
+      
+    
+      form{
+        margin: 0 auto;
+        width:95%;
+        h2{
+          font-size: 1.6rem;
+          margin-top: 0;
+        }
+        label, 
+        input, 
+        textarea{
+          font-size: 1.2rem;
+        }
+        .note{
+          font-size: 1rem;
+        }
+        input, 
+        textarea {
+          height: 2.5rem;
+        }
+        textarea{
+          height: 14rem;
+        }
+        button{
+          margin-bottom: 1.5rem;
+        }
+        
+      }
+    }
+    .horaries{
+      padding-left: 0;
+      margin-top: 1rem 0rem 0rem;
+      width: 100%;
+      border-radius: 0;
+    }
+
+    .imgDroite{
+      width: 100%;
+      height: 17rem;
+      object-fit: cover;      
+    }
+  }
+}

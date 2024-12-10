@@ -1,0 +1,46 @@
+@blackColor:#000;
+.l-padding{
+  padding-left: 3rem;
+}
+
+//Header
+#hero {
+  background-image: url('../images/banner/bannerNotreAgence.jpg');
+}
+//Image guche
+#notreAgence{
+  .imgGauche {
+    img{
+      width: 100%;
+      object-fit: cover;  
+    }
+  }
+}
+// Avis
+.avisClass{
+  margin: 3rem 0;
+  .logoAvis{
+    text-align: center;
+    img{
+      height: 10rem;
+      overflow: hidden;
+    }
+  }
+}
+// Media Querie
+@media (max-width:576px){
+  .l-padding{
+    padding-left: 1rem;
+  }
+  #notreAgence{
+    .imgGauche {
+      img{
+        margin-bottom: 3rem; 
+        padding: 0; 
+      }
+    }
+    .avisClass{
+      text-align: center;
+    }
+  }
+}

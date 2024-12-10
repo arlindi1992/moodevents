@@ -1,0 +1,94 @@
+#hero {
+  background-image: url(../images/banner/bannerDevis.jpg);
+}
+.container {
+  max-width: 120rem;
+}
+#devis .formBg {
+  background-color: #202020;
+  margin: 0 auto 1rem;
+  border-radius: 1.5rem;
+  width: 45rem;
+}
+#devis .formBg form {
+  width: 90%;
+  text-align: center;
+  color: #fff;
+  margin: 3rem auto;
+  border-radius: 1.5rem;
+  font-size: 1.4rem;
+}
+#devis .formBg form h2 {
+  padding-top: 1.5rem;
+  font-size: 2rem;
+  color: #ed9702;
+}
+#devis .formBg form label {
+  display: block;
+  text-align: left;
+  margin: 0.7rem 0 0.1rem 0.5rem;
+  padding-left: 0rem;
+  font-size: 1.2rem;
+}
+#devis .formBg form input {
+  width: 100%;
+  padding-left: 1.2rem;
+  height: 2.8rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+#devis .formBg form .row input {
+  width: 97%;
+}
+#devis .formBg form .note {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+}
+#devis .formBg form textarea {
+  height: 10rem;
+  width: 100%;
+  resize: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+#devis .formBg form button {
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 991px) {
+  .container {
+    padding: 0 !important;
+  }
+  #devis .formBg {
+    padding-left: 0;
+    margin: 0 0 0.1rem 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  #devis .formBg form {
+    margin: 0 auto;
+    width: 95%;
+  }
+  #devis .formBg form h2 {
+    font-size: 1.6rem;
+    margin-top: 0;
+  }
+  #devis .formBg form label,
+  #devis .formBg form input,
+  #devis .formBg form textarea {
+    font-size: 1.2rem;
+  }
+  #devis .formBg form .note {
+    font-size: 1rem;
+  }
+  #devis .formBg form input,
+  #devis .formBg form textarea {
+    height: 2.5rem;
+  }
+  #devis .formBg form textarea {
+    height: 14rem;
+  }
+  #devis .formBg form button {
+    margin-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('../Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url('../Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('../Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  /*n'accepte pas le police de text*/
+  src: url('../Roboto/Roboto-Medium.ttf') format('truetype');
+}
+html {
+  scroll-behavior: smooth;
+}
+body p {
+  font-size: 1.2rem;
+  padding: 0;
+}
+body .row {
+  padding: 0px !important;
+}
+.bt-orange {
+  color: #fff;
+  background-color: #ed9702;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border-radius: 0.4rem;
+  width: 15rem;
+  height: 3.5rem;
+  display: flex;
+  /* active flexbox */
+  align-items: center;
+  /* centre vertikal */
+  justify-content: center;
+  /* center horizontal */
+  text-align: center;
+  /* text center */
+  transition: background-color 0.5s ease;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.bt-orange:hover {
+  background-color: #c47c01;
+}
+.txt-orange {
+  color: #ed9702;
+}
+#hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+#hero h1,
+#hero h2,
+#hero .bt-orange {
+  z-index: 1;
+}
+#hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+/*NAV BAR */
+header .navbar #logo {
+  max-width: 4rem;
+}
+header nav #navbarNavAltMarkup a {
+  font-size: 1.2rem;
+  transition: 0.5s ease;
+}
+header nav #navbarNavAltMarkup a:hover {
+  color: #ed9702;
+}
+/* ----- SECTION HERO ----- */
+#hero {
+  background-size: cover;
+  height: 18rem;
+}
+#hero h1 {
+  color: #ed9702;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 1200px;
+}
+#hero h2 {
+  color: #fff;
+}
+/* ---- BODY ----*/
+body {
+  font-family: 'Montserrat Regular';
+}
+body h1,
+body h2,
+body h3,
+body h4 {
+  font-family: 'Montserrat Bold';
+}
+body h2,
+body h3 {
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin: 1.5rem 0;
+  font-family: 'Montserrat Bold';
+}
+body h3 {
+  font-size: 1.8rem;
+  margin: 1rem 0 0 0;
+}
+body a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #000;
+}
+body .active {
+  color: #ed9702 !important;
+  font-weight: bold;
+}
+body .txtWhiteColor {
+  color: #fff;
+}
+/*  ------  FOOTER  ------- */
+footer {
+  color: #fff;
+  background-color: #202020;
+  padding: 3rem 0;
+  /* ----- FOOTER GAUCHE  ----- */
+  /* ----- FOOTER CENTER ----- */
+  /* ----- FOOTER DROIT ----- */
+  /* ----- FOOTER COPYRIGHT ----- */
+}
+footer h3 {
+  text-transform: uppercase;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  list-style-type: none;
+}
+footer .gaucheFooter .row i {
+  font-size: 2rem;
+}
+footer .centreFooter h3,
+footer .centreFooter ul {
+  padding-left: 4rem;
+  list-style-type: none;
+}
+footer .droitFooter .row {
+  vertical-align: top;
+}
+footer .fa-brands {
+  color: #fff;
+  font-size: 2rem;
+}
+footer .droiteFooter h3 {
+  padding-left: 1rem;
+}
+footer .copyright {
+  line-height: 0.7rem;
+}
+footer p {
+  font-size: 0.9rem;
+}
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #ed9702;
+  color: #202020;
+  cursor: pointer;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+}
+/* Add a dark-orange background on hover */
+#myBtn:hover {
+  background-color: #c47c01;
+}
+@media (max-width: 576px) {
+  body .container {
+    padding: 0 2rem;
+  }
+  body h2 {
+    font-size: 2rem;
+  }
+  body h3 {
+    font-size: 1.6rem;
+  }
+  body p {
+    font-size: 1.2rem;
+  }
+  #hero .bt-orange {
+    font-size: 1rem;
+  }
+  footer .centreFooter h3,
+  footer .centreFooter ul {
+    padding-left: 0rem;
+  }
+  #myBtn {
+    padding: 1rem;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1200px !important;
+  }
+}

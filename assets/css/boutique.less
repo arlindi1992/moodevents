@@ -1,0 +1,187 @@
+@whiteColor:#fff;
+@blackColor:#000;
+@orangeColor:#ed9702;
+@darkGriseColor:#202020;
+@lightGreenColor:#00E942;
+@purpleColor: #4D00FF;
+@redColor:#FF0000;
+@pinkColor: #FF00B7;
+@lightBlueColor:#37E2EB;
+@lightGriseColor:#f4f4f4;
+
+
+//Body
+body{
+    .row{
+        p{
+            font-size: 1rem;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+    }   
+    .distanc{
+        padding: 5rem 0;
+    }
+  
+  //Hero
+  #hero{
+    background-image: url(../images/banner/bannerBoutique.jpg);
+  }
+
+  // images
+  img{
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+  }
+  // parent class of class photo-hover need to be set to relative for the class photo-hover to work
+  .lien-conteneur-photo {
+    position: relative; /* Siguron që pozicionimi i elementeve brenda të jetë në lidhje me këtë element */
+    display: flex;
+    justify-content: flex-end;
+  }
+  // hover effect class
+  .photo-hover {
+    position: absolute; /* Pozicionimi absolut në lidhje me elementin prind */
+    bottom: 0; /* text show in the bottom */
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.7); /* background 50% transparent */
+    height: 1.5rem; /* in the start it was 1.5rem */
+    overflow: hidden; 
+    transition: height 0.3s ease-in-out; /* smoth transition */
+  }
+  // height of the hover text 
+  .lien-conteneur-photo:hover .photo-hover {
+    height: 100%; 
+  }
+}
+// Disponible dans différents couleurs
+.diffColor{
+  background-color: @lightGriseColor;
+  height: 100%;
+  border-radius: 1.5rem;
+  margin: .25rem;
+  
+  .row{
+    span{
+    color: @whiteColor;
+    font-weight: bold;
+    }
+  }
+  
+}
+// carres des couleur
+  .couleurOrange,
+  .lightGreenColor,
+  .purpleColor,
+  .redColor,
+  .pinkColor,
+  .lightBlueColor{
+    width: 9rem;
+    height: 9rem;
+    background-color: @orangeColor;
+    border-radius: 1rem;
+    margin: 1rem;    
+    box-shadow: .4rem .4rem .4rem rgba(0, 0, 0,.4) !important;
+    
+  }
+  .lightGreenColor{
+    background-color: @lightGreenColor;
+  }
+  .purpleColor{
+    background-color: @purpleColor;
+  }
+  .redColor{
+    background-color:@redColor;
+  }
+  .pinkColor{
+    background-color: @pinkColor;
+  }
+  .lightBlueColor{
+    background-color: @lightBlueColor;
+  }
+// Différents evenements
+.difEvenements{
+    background-color: @lightGriseColor;
+    height: 35rem;
+    border-radius: 1.5rem;
+  h4{
+    margin: 2rem;
+  }
+  ul{
+    padding: 0;
+    li{
+        font-size: 1.5rem;
+        list-style-type: none;
+    }
+  }
+}
+
+// a gouche padding
+.l-padding{
+  padding-left: 3%;
+}
+// a droit padding
+.r-padding{
+  padding-right: 3%;
+}
+
+
+// Media Queries 576 px
+@media (max-width:576px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col-12, .col-md-6, .col-md-4, .col-4{
+    width: 100%;
+    padding: .5rem;
+  }
+  // display none pour les éléments qui ne sont pas importants ou qui sont trop volumineux
+  .dispNon{
+      display: none;
+  }
+  img {
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%; 
+    display: inline-block; // ajoute inline-block pour mobile
+    text-align: center;
+  }
+  .col-8, .col-md-6, .col-4, .col-md-4{
+    width: 100%;
+  }
+  .pe-5, .ps-5{
+    padding-right: 1px !important;
+    padding-left: 1px !important;
+  }
+  .l-padding{
+    padding-left: 1rem;
+  }
+  .r-padding{
+    padding: 1rem;
+  }
+}
+// media query max width 1199px
+@media (max-width:1199px) {
+    .couleurOrange,
+    .lightGreenColor,
+    .purpleColor,
+    .redColor,
+    .pinkColor,
+    .lightBlueColor{
+      width: 5rem;
+      height: 5rem;
+      border-radius: 1rem;
+      margin: .2rem;
+      padding: 0rem;
+  }
+}

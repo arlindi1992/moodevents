@@ -1,0 +1,21 @@
+@blackColor:#000;
+@whiteColor:#fff;
+
+//Hero
+#hero{
+  background-image: url('../images/banner/bannerLocation.jpg');
+}
+
+// div parent de la imagen
+.image-wrapper {
+  align-items: center;
+  justify-content: center;
+  height: 300px; /* height de parent de img */
+  overflow: hidden;
+  background-color: @whiteColor; /* coulor pour espaces vides autour de images  */
+  img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+}

@@ -1,0 +1,146 @@
+/* ----- SECTION HERO ----- */
+#hero {
+  background-image: url('../images/accueil/header_bg.jpg');
+  height: 38rem;
+}
+#hero h2 {
+  color: #fff;
+}
+#hero a {
+  font-size: 2.2rem;
+}
+#hero .bt-orange {
+  width: 35rem;
+}
+#hero::before {
+  background-color: rgba(0, 0, 0, 0);
+}
+/* ----- DIFFERENCE ----- */
+#difference {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  /*orange carree*/
+  /*orange gauche ligne*/
+  /*orange droit ligne*/
+}
+#difference .orange-obj .carre {
+  width: 5rem;
+  height: 5rem;
+  background-color: #ed9702;
+  position: absolute;
+  top: -2.5rem;
+  right: 5rem;
+  z-index: 100;
+}
+#difference .orange-obj .gaucheLigne {
+  width: 1.2rem;
+  height: 100%;
+  background-color: #ed9702;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#difference .orange-obj .droiteLigne {
+  width: 1.2rem;
+  height: 100%;
+  background-color: #ed9702;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* ----- SERVICES ------*/
+#services .row {
+  margin: 1.5rem 0;
+}
+#services img {
+  width: 100%;
+  border-radius: 3rem;
+}
+#services p,
+#services h3 {
+  padding-left: 3rem;
+}
+/* ----- CONFIANCE ----- */
+#confiance {
+  margin-bottom: 3rem;
+}
+#confiance .container h3 {
+  margin: 2rem 0 0.5rem;
+}
+#confiance img {
+  width: 100%;
+  padding: 0.5rem;
+  object-fit: cover;
+}
+/*  ------  GOOGLE MAPS  ------- */
+.googleMap {
+  margin-top: 15rem 0 0 !important;
+  padding: 0;
+}
+@media (max-width: 576px) {
+  #hero div {
+    margin: 0 auto;
+  }
+  .row {
+    padding: 0;
+  }
+  /*Presentation de CEO*/
+  #presentation h2 {
+    margin-top: 0rem;
+  }
+  /*DIFFERENCE*/
+  #difference {
+    /*orange gauche ligne*/
+    /*orange droit ligne*/
+    /*orange carree*/
+  }
+  #difference h2 {
+    padding: 0 1rem !important;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+    font-size: 2rem;
+  }
+  #difference h3 {
+    padding: 0 0.9rem !important;
+    font-size: 1.6rem;
+    padding: 0;
+  }
+  #difference .p-left {
+    padding-left: 1rem;
+  }
+  #difference .orange-obj .gaucheLigne {
+    width: 0.6rem;
+  }
+  #difference .orange-obj .droiteLigne {
+    width: 0.6rem;
+  }
+  #difference .orange-obj .carre {
+    width: 2.5rem;
+    height: 2.5rem;
+    top: -1.25rem;
+    right: 2.5rem;
+    z-index: 100;
+  }
+  /*SERVICES*/
+  #services {
+    margin: 3rem 0 0;
+  }
+  #services h3 {
+    font-size: 1.6rem;
+    padding: 0;
+  }
+  #services p {
+    padding: 0;
+  }
+  #services .row {
+    margin: 0rem;
+  }
+  #services h2 {
+    font-size: 2rem;
+  }
+  /* ----- CONFIANCE ----- */
+  #confiance img {
+    padding: 0rem;
+  }
+}

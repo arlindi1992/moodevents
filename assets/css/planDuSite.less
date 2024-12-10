@@ -1,0 +1,48 @@
+@whiteColor:#fff;
+@blackColor:#000;
+@orangeColor:#ed9702;
+@darkGriseColor:#202020;
+@lightGris:#f4f4f4;
+
+//Header
+
+#hero{
+    background-image: url('../images/banner/bannerPlanDuTravail.jpg');
+  }
+
+#plan{
+  background-color: @lightGris;
+  // color: @whiteColor;
+  border: .2rem solid @darkGriseColor;
+  margin: 3rem;
+  padding: 5rem;
+  border-radius: 1.5rem;
+
+  ul{
+    margin-top: 3rem;
+    li a{
+      //color: @whiteColor;
+      line-height: 2rem;
+      font-size: 1.5rem;
+      
+    }
+  }
+}
+.logo{
+  width: 20rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width:576px) {
+  .container{
+    padding: 0;
+  }
+  #plan{
+    margin: .5rem; 
+    padding: 2rem;
+  }
+}
+
+img{
+  width: 40rem;
+}

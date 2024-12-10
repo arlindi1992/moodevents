@@ -1,0 +1,160 @@
+body .row p {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+body .distanc {
+  padding: 5rem 0;
+}
+body #hero {
+  background-image: url(../images/banner/bannerBoutique.jpg);
+}
+body img {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+}
+body .lien-conteneur-photo {
+  position: relative;
+  /* Siguron që pozicionimi i elementeve brenda të jetë në lidhje me këtë element */
+  display: flex;
+  justify-content: flex-end;
+}
+body .photo-hover {
+  position: absolute;
+  /* Pozicionimi absolut në lidhje me elementin prind */
+  bottom: 0;
+  /* text show in the bottom */
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* background 50% transparent */
+  height: 1.5rem;
+  /* in the start it was 1.5rem */
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  /* smoth transition */
+}
+body .lien-conteneur-photo:hover .photo-hover {
+  height: 100%;
+}
+.diffColor {
+  background-color: #f4f4f4;
+  height: 100%;
+  border-radius: 1.5rem;
+  margin: 0.25rem;
+}
+.diffColor .row span {
+  color: #fff;
+  font-weight: bold;
+}
+.couleurOrange,
+.lightGreenColor,
+.purpleColor,
+.redColor,
+.pinkColor,
+.lightBlueColor {
+  width: 9rem;
+  height: 9rem;
+  background-color: #ed9702;
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4) !important;
+}
+.lightGreenColor {
+  background-color: #00E942;
+}
+.purpleColor {
+  background-color: #4D00FF;
+}
+.redColor {
+  background-color: #FF0000;
+}
+.pinkColor {
+  background-color: #FF00B7;
+}
+.lightBlueColor {
+  background-color: #37E2EB;
+}
+.difEvenements {
+  background-color: #f4f4f4;
+  height: 35rem;
+  border-radius: 1.5rem;
+}
+.difEvenements h4 {
+  margin: 2rem;
+}
+.difEvenements ul {
+  padding: 0;
+}
+.difEvenements ul li {
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+.l-padding {
+  padding-left: 3%;
+}
+.r-padding {
+  padding-right: 3%;
+}
+@media (max-width: 576px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col-12,
+  .col-md-6,
+  .col-md-4,
+  .col-4 {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .dispNon {
+    display: none;
+  }
+  img {
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  .col-8,
+  .col-md-6,
+  .col-4,
+  .col-md-4 {
+    width: 100%;
+  }
+  .pe-5,
+  .ps-5 {
+    padding-right: 1px !important;
+    padding-left: 1px !important;
+  }
+  .l-padding {
+    padding-left: 1rem;
+  }
+  .r-padding {
+    padding: 1rem;
+  }
+}
+@media (max-width: 1199px) {
+  .couleurOrange,
+  .lightGreenColor,
+  .purpleColor,
+  .redColor,
+  .pinkColor,
+  .lightBlueColor {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    margin: 0.2rem;
+    padding: 0rem;
+  }
+}

@@ -1,0 +1,33 @@
+#hero {
+  background-image: url('../images/banner/bannerPlanDuTravail.jpg');
+}
+#plan {
+  background-color: #f4f4f4;
+  border: 0.2rem solid #202020;
+  margin: 3rem;
+  padding: 5rem;
+  border-radius: 1.5rem;
+}
+#plan ul {
+  margin-top: 3rem;
+}
+#plan ul li a {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+.logo {
+  width: 20rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 0;
+  }
+  #plan {
+    margin: 0.5rem;
+    padding: 2rem;
+  }
+}
+img {
+  width: 40rem;
+}

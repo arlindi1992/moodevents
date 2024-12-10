@@ -1,0 +1,14 @@
+#hero {
+  background-image: url(../images/banner/bannerEvenements.jpg);
+}
+#evenements .container img {
+  height: 20rem;
+  width: 96%;
+  object-fit: cover;
+  border-radius: 1.2rem;
+}
+@media (max-width: 576px) {
+  #evenements .container img {
+    height: 20rem;
+  }
+}
